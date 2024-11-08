@@ -386,6 +386,43 @@ body{
     transition: 1s;
 }
 
+/* Auth Style */
+.input-group {
+    margin-bottom: 15px;
+  }
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin: 0 auto;
+  }
+
+.auth-container {
+    background-color: #E6D1B4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0F2C33;
+    width: 500px;
+    margin: 20px auto;
+  }
+  .auth-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0F2C33;
+    color: #E6D1B4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .auth-container button:hover {
+    background-color: #533946;
+    transition: 0.3s;
+  }
+
+
+
+
 /* Media-Query */
 @media(max-width: 480px){
     
