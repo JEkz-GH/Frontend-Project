@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>recipewebpage</title>
+    <title>foodmenuwebpage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,19 +11,25 @@
     <header class="header">
         <nav class="navbar">
             <div class="container">
-                <h1 class="logo">JustRecipes<i class="fas fa-carrot"></i></h1>
+                <h1 class="logo">MealDelight<i class="fas fa-utensils"></i></h1>
                 <ul class="nav-links">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">PRODUCTS</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">BLOGS</a></li>
+                    <li><a href=""><i class="fas fa-cart-shopping"></i></a></li>
+                    <li id="authLinks"><a href="login.html" id="loginLink">Log <i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><button class="logout" id="logoutBtn" style="display: none;">Logout</button></li>
+                    <!-- <li><a href="">PRODUCTS</a></li> -->
                 </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="hero-content">
-                <h1>JustRecipes<i class="fas fa-carrot"></i></h1>
+                <h1>MealDelight<i class="fas fa-utensils"></i></h1>
                 <h4>...where every <br> ingredient <br> tells a story</h4>
                 <h3>GOOD FOR HEALTHY LIFE</h3>
                 <a href="">ReadMore</a>
@@ -35,10 +41,10 @@
             <div class="container">
                 <div class="sample"><img src="images/fruit-berry-salad.jpg" alt=""><div class="sample-text">Fruit</div></div>
                 <div class="sample"><img src="images/dessert1.avif" alt=""><div class="sample-text">Dessert</div></div>
-                <div class="sample"><img src="images/meat-sauce-soup.avif" alt=""><div class="sample-text">Soup</div></div>
+                <div class="sample"><img src="images/peppersoup2.jpeg" alt=""><div class="sample-text">Soup</div></div>
                 <div class="sample"><img src="images/fast-food.jpg" alt=""><div class="sample-text">FastFood</div></div>
                 <div class="sample"><img src="images/fruits-smoothie.avif" alt=""><div class="sample-text">Juice</div></div>
-                <div class="sample"><img src="images/vegetables-white-bg.avif" alt=""><div class="sample-text">Vegetable</div></div>
+                <div class="sample"><img src="images/vegetablemix.jpeg" alt=""><div class="sample-text">Vegetable</div></div>
             </div>
         </section>
         <section class="welcome-section">
@@ -48,7 +54,7 @@
                 </div>
                 <div class="welcome-content">
                     <h1>Welcome!</h1>
-                    <h2>JustRecipes<i class="fas fa-carrot"></i></h2>
+                    <h2>MealDelight<i class="fas fa-utensils"></i></h2>
                     <p>
                         Welcome to our recipe haven! Discover delicious, easy-to-follow recipes for every occasion.
                         Whether you're a beginner or a pro, we've got something to inspire your next culinary adventure.
@@ -57,26 +63,47 @@
                 </div>
             </div>
         </section>
-        <section class="product-section">
-            <h1>OUR PRODUCTS</h1>
-            <div class="container">
+        <section class="product-section" id="menu"> 
+            <h1>FOOD MENU</h1>
+
+            <!-- search input  -->
+            <input type="text" id="searchInput" placeholder="Search by category, preference or price...">
+    
+            <div id="filterButtons"></div>
+
+            <div id="menuList"></div>
+            <!-- PEGINATION -->
+            <div id="pagination"></div>
+
+            
+
+            <!-- <div class="container">
                 <div class="product-links">
                     <a href="" id="all">All Products</a>
-                    <a href="">Fruits</a>
-                    <a href="">FastFood</a>
+                    <a href="">Appetizer</a>
+                    <a href="">Main-Course</a>
                     <a href="">Vegetables</a>
                     <a href="">Desserts</a>
-                    <a href="">Drinks</a>
+                    <a href="">Gluten-free</a>
+                    <a href="">Low Carb</a>
+                    <a href="">Diary-free</a>
                 </div>
-                <div class="product-list">
+                <div class="search">
+                    <input type="search" id="srch" placeholder="Search meal...">
+                    <button for="srch" id="srch-btn">Search</button>
+                </div>
+                <div class="product-list" id="menuList">
                     <div class="content"><img src="images/dessert2-product.jpg" alt=""><h4>Fruits Pancakes Selections</h4> <a href="">Add to Cart</a></div>
-                    <div class="content"><img src="images/vegetables-product.jpg" alt=""><h4>Mix-Vegetable Vegan Salad</h4> <a href="">Add to Cart</a></div>
-                    <div class="content"><img src="images/fruit-cocktails-product.avif" alt=""><h4>Fresh Squeeze Juice Cocktails</h4> <a href="">Add to Cart</a></div>
-                    <div class="content"><img src="images/fastfood-product.avif" alt=""><h4>Creamy Sandwich Humburger</h4> <a href="">Add to Cart</a></div>
-                    <div class="content"><img src="images/fruit-salad-product.jpg" alt=""><h4>Fresh Mix-Fruits Berry Salad</h4><a href="">Add to Cart</a></div>
-                    <div class="content"><img src="images/soup-product.jpg" alt=""><h4>Kharcho Traditional Georgian</h4><a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/vegan.webp" alt=""><h4>Vegan Meal</h4> <a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/gluten-free.webp" alt=""><h4>Gluten-free Meal</h4> <a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/low carb.webp" alt=""><h4>Low Carb Meal</h4> <a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/main-course7.jpeg" alt=""><h4>Porridge Yam</h4><a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/main-course6.jpeg" alt=""><h4>Boiled Yam, Plantain with Sauce</h4><a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/jollof2.jpeg" alt=""><h4>Jollof Rice and Chicken</h4> <a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/main-courseEgusi.jpeg" alt=""><h4>Egusi Soup wit Semovita</h4><a href="">Add to Cart</a></div>
+                    <div class="content"><img src="images/main-courseOkro.jpeg" alt=""><h4>Okro Soup with Amala</h4><a href="">Add to Cart</a></div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <div class="liner">
             <img src="images/liner3.jpg" alt="">
@@ -210,7 +237,10 @@
                 </p>
             </div>
         </div>
-        <p class="copyright">&copy;2024 JustRecipes All Rights Reserved</p>
+        <p class="copyright">&copy;2024 MealDelight All Rights Reserved</p>
     </footer>
+
+
+    <script src="index.js"></script>
 </body>
 </html>

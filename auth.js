@@ -1,15 +1,78 @@
-// update the visibility of loginError, register and logout link 
-function updateAuthLinks(){
-    if(isLoggedIn){
-        loginLink.style.display = 'none'
-        registerLink.style.display ='none'
-        logoutBtn.style.display = 'block'
-    }else{
-        loginLink.style.display = 'inline'
-        registerLink.style.display ='inline'
-        logoutBtn.style.display = 'none'
+// JavaScript for toggling the hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active'); // Toggle active class on hamburger
+  navLinks.classList.toggle('active'); // Toggle active class on nav-links
+});
+
+
+
+const loginLink = document.getElementById('loginLink');
+// const registerLink = document.getElementById('registerLink');
+const logoutBtn = document.getElementById('logoutBtn');
+
+// Dynamically check if the user is logged in
+function isLoggedIn() {
+    return localStorage.getItem('authenticatedUser') === 'true';
+}
+
+// Run on page load to update the navbar
+document.addEventListener('DOMContentLoaded', () => {
+    updateAuthLinks();
+});
+
+// Update the visibility of login, register, and logout links
+function updateAuthLinks() {
+    if (isLoggedIn()) {
+        loginLink.style.display = 'none';
+        // registerLink.style.display = 'none';
+        if (logoutBtn) logoutBtn.style.display = 'block';
+    } else {
+        loginLink.style.display = 'inline';
+        // registerLink.style.display = 'inline';
+        if (logoutBtn) logoutBtn.style.display = 'none';
     }
 }
+
+// Handle Logout Button Click
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('authenticatedUser'); // Clear login state
+        alert('Logged out successfully!');
+        updateAuthLinks(); // Update navbar links
+        window.location.href = 'index.html'; // Redirect to homepage
+    });
+}
+
+
+
+// const loginLink = document.getElementById('loginLink')
+// // const registerLink = document.getElementById('registerLink')
+// const logoutBtn = document.getElementById('logoutBtn')
+
+// let isLoggedIn = localStorage.getItem('authenticatedUser') === 'true'
+
+// // run on page load to update the navbar
+// document.addEventListener('DOMContentLoaded', () =>{
+//     updateAuthLinks()
+// });
+
+
+
+// // update the visibility of loginError, register and logout link 
+// function updateAuthLinks(){
+//     if(isLoggedIn){
+//         loginLink.style.display = 'none'
+//         // registerLink.style.display ='none'
+//         logoutBtn.style.display = 'block'
+//     }else{
+//         loginLink.style.display = 'inline'
+//         // registerLink.style.display ='inline'
+//         logoutBtn.style.display = 'none'
+//     }
+// }
 
 
 function isValidEmail(email){
@@ -91,3 +154,12 @@ if(registerForm){
         window.location.href = 'login.html'
     })
 }
+
+// // Handle Logout Button Click
+// logoutBtn.addEventListener('click', () => {
+//     localStorage.removeItem('authenticatedUser'); // Clear login state
+//     alert('Logged out successfully!');
+//     isLoggedIn = false;
+//     updateAuthLinks(); // Update navbar links
+//     window.location.href = 'index.html'; // Redirect to homepage
+//   });

@@ -1,0 +1,300 @@
+{
+    
+  "pagination": {
+    "total_meals": 43,
+    "per_page": 6,
+    "current_page": 1,
+    "total_pages": 8
+  },
+
+  
+  "meals": [
+      {
+        "name": "Toast bread & coffee",
+        "price": "$5",
+        "category": "Appetizer",
+        "preference": "Low Carb",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/breakfast-recipes.jpg"
+      },
+      {
+        "name": "Pap & Fries",
+        "price": "$5",
+        "category": "Appetizer",
+        "preference": "Gluten-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/breakfast-idea.jpg"
+      },
+      {
+        "name": "Asun",
+        "price": "$5",
+        "category": "Appetizer",
+        "preference": "Diary-free",
+        "image": "https://www.thepretendchef.com/wp-content/uploads/2016/06/asun-1-11-595x335.jpg.webp"
+      },
+      {
+        "name": "Devilled Egg",
+        "price": "$5",
+        "category": "Appetizer",
+        "preference": "Vegan",
+        "image": "https://www.thepretendchef.com/wp-content/uploads/2017/04/stuffed-egg-1-9.jpg.webp"
+      },
+      {
+        "name": "Isi Ewu",
+        "price": "$5",
+        "category": "Appetizer",
+        "preference": "Diary-free",
+        "image": "https://www.thepretendchef.com/wp-content/uploads/2017/12/isi-ewu-1-6.jpg.webp"
+      },
+      {
+        "name": "Samosa",
+        "price": "$7",
+        "category": "Appetizer",
+        "preference": "Gluten-free",
+        "image": "https://www.thepretendchef.com/wp-content/uploads/2022/03/18-Nigerian-party-appetizers-small-chops-3.jpg.webp"
+      },
+      {
+        "name": "Ewedu & Lafun",
+        "price": "$7",
+        "category": "Main-Course",
+        "preference": "Low Carb",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/yoruba-foods1.jpg"
+      },
+      {
+        "name": "Fried Rice",
+        "price": "$7",
+        "category": "Main-Course",
+        "preference": "Gluten-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/Fried-rice.jpg"
+      },
+      {
+        "name": "Beans & Fries",
+        "price": "$7",
+        "category": "Main-Course",
+        "preference": "Diary-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/2015/02/porridge-beans.jpg"
+      },
+      {
+        "name": "Mushroom Dashi",
+        "price": "$7",
+        "category": "Main-Course",
+        "preference": "Vegan",
+        "image": "https://assets.bonappetit.com/photos/5f9056f6f78a476aec3387c5/1:1/w_1920%2Cc_limit/HLY-Chaey-16x9-Donabe.jpg"
+      },
+      {
+        "name": "Bean Tacos",
+        "price": "$2",
+        "category": "Main-Course",
+        "preference": "Low Carb",
+        "image": "https://www.forksoverknives.com/uploads/20-Minute-Black-Bean-Tacos-wordpress.jpg?auto=webp&auto=webp&optimize=high&quality=70&width=700&dpr=1.5"
+      },
+      {
+        "name": "Kisir",
+        "price": "$2",
+        "category": "Main-Course",
+        "preference": "Vegan",
+        "image": "https://assets.bonappetit.com/photos/60775dde82241753c1976bc2/1:1/w_1920%2Cc_limit/0521-Yasmin-Khan-Spicy-Bulgur-in-Lettuce-Cups.jpg"
+      },
+      {
+        "name": "Pancakes",
+        "price": "$2",
+        "category": "Desserts",
+        "preference": "Diary-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/pancakes.jpg"
+      },
+      {
+        "name": "Fruit Salad",
+        "price": "$2",
+        "category": "Desserts",
+        "preference": "Vegan",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/fruit-salad.jpg"
+      },
+      {
+        "name": "Moi Moi",
+        "price": "$2",
+        "category": "Desserts",
+        "preference": "Low Carb",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/moi-moi-recipe-1.jpg"
+      },
+      {
+        "name": "Pepper Soup",
+        "price": "$9",
+        "category": "Desserts",
+        "preference": "Gluten-free",
+        "image": "https://africanjollofkitchen.com/wp-content/uploads/2024/04/pepper-soup-goat-meat.jpg"
+      },
+      {
+        "name": "Beef Suya",
+        "price": "$9",
+        "category": "Desserts",
+        "preference": "Diary-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/suya.jpg"
+      },
+      {
+        "name": "African Salad",
+        "price": "$9",
+        "category": "Desserts",
+        "preference": "Vegan",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/abacha.jpg"
+      },
+      {
+        "name": "Eba & Veg.",
+        "price": "$9",
+        "category": "Main-Course",
+        "preference": "Gluten-free",
+        "image": "https://media.istockphoto.com/id/1327486548/photo/nigerian-okra-soup-with-garri.jpg?b=1&s=612x612&w=0&k=20&c=Grb1wDaQYA52675HzKocpMwLWvTW28iDWyExEOufxVo="
+      },
+      {
+        "name": "Noodles",
+        "price": "$9",
+        "category": "Main-Course",
+        "preference": "Vegan",
+        "image": "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "name": "Ukwa",
+        "price": "$10",
+        "category": "Main-Course",
+        "preference": "Low Carb",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/Ukwa-breadfruit.jpg"
+      },
+      {
+        "name": "Okro Soup",
+        "price": "$10",
+        "category": "Main-Course",
+        "preference": "Vegan",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/okro-2-500x361.jpg"
+      },
+      {
+        "name": "Afang Soup",
+        "price": "$10",
+        "category": "Main-Course",
+        "preference": "Gluten-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/afang-soup.jpg"
+      },
+      {
+        "name": "Rivers Native",
+        "price": "$10",
+        "category": "Main-Course",
+        "preference": "Diary-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/2015/03/river-state-native-soup.jpg"
+      },
+      {
+        "name": "Eforiro",
+        "price": "$10",
+        "category": "Main-Course",
+        "preference": "Gluten-free",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/Efo-riro-recipe-500x375.jpg"
+      },
+      {
+        "name": "Nsala Soup",
+        "price": "$12",
+        "category": "Main-Course",
+        "preference": "Low Carb",
+        "image": "https://allnigerianfoods.com/wp-content/uploads/Nsala-Soup1-500x375.jpg"
+      },
+      {
+        "name": "Coconut Rice",
+        "price": "$12",
+        "category": "Main-Course",
+        "preference": "Vegan",
+        "image": "https://i0.wp.com/www.yummymedley.com/wp-content/uploads/2017/05/seafood-fried-rice.jpg?zoom=2&resize=350%2C460&ssl=1"
+      },
+      {
+        "name": "Matooke",
+        "price": "$12",
+        "category": "Appetizer",
+        "preference": "Low Carb",
+        "image": "https://cdn.shopify.com/s/files/1/0517/7245/7142/files/Matooke_-_Uganda_600x600.jpg?v=1720704885"
+      },
+      {
+        "name": "Jollof Rice",
+        "price": "$12",
+        "category": "Main-Course",
+        "preference": "Diary-free",
+        "image": "https://cdn.shopify.com/s/files/1/0517/7245/7142/files/2_1faf918d-66ea-4eee-b30e-421d2e564316_480x480.jpg?v=1720704465"
+      },
+      {
+        "name": "Chin chin",
+        "price": "$12",
+        "category": "Desserts",
+        "preference": "Gluten-free",
+        "image": "https://images.unsplash.com/photo-1665554837563-3782d21a676b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWZyaWNhbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "name": "Wheat bread",
+        "price": "$3",
+        "category": "Appetizer",
+        "preference": "Gluten-free",
+        "image": "https://images.unsplash.com/photo-1669034937569-aeb860068b41?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWZyaWNhbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "name": "Puff Pastery",
+        "price": "$3",
+        "category": "Appetizer",
+        "preference": "Vegan",
+        "image": "https://images.unsplash.com/photo-1549203386-9d4394c8a2fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwZXRpemVycyUyMGFuZCUyMGRlc3NlcnRzfGVufDB8fDB8fHww"
+      },
+      {
+        "name": "Cake",
+        "price": "$3",
+        "category": "Desserts",
+        "preference": "Low Carb",
+        "image": "https://media.istockphoto.com/id/1222564135/photo/bruschetta-with-salmon-curd-cheese-and-cucumber-on-toast-in-high-key-style-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=sSDWoADrZ_TXXSYAuPg6ZxzIcnFCW20BQydigriEAF8="
+      },
+      {
+        "name": "Ice bread",
+        "price": "$3",
+        "category": "Appetizer",
+        "preference": "Gluten-free",
+        "image": "https://images.unsplash.com/photo-1643312767944-d9d6d72798b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGFwcGV0aXplcnMlMjBhbmQlMjBkZXNzZXJ0c3xlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "name": "Filled ice",
+        "price": "$3",
+        "category": "Appetizer",
+        "preference": "Vegan",
+        "image": "https://images.unsplash.com/photo-1664988935525-e7e0e5e375e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXBwZXRpemVycyUyMGFuZCUyMGRlc3NlcnRzfGVufDB8fDB8fHww"
+      },
+      {
+        "name": "Sushi",
+        "price": "$10",
+        "category": "Desserts",
+        "preference": "Low Carb",
+        "image": "https://images.unsplash.com/photo-1702742322469-36315505728f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8RGVzc2VydHN8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "name": "Parfait",
+        "price": "$10",
+        "category": "Appetizer",
+        "preference": "Gluten-free",
+        "image": "https://plus.unsplash.com/premium_photo-1669680785558-c189b49aed4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RGVzc2VydHN8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "name": "Choco Drink",
+        "price": "$10",
+        "category": "Desserts",
+        "preference": "Vegan",
+        "image": "https://images.unsplash.com/photo-1613757360326-a8c57c97632a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fERlc3NlcnRzfGVufDB8fDB8fHww"
+      },
+      {
+        "name": "Short Breads",
+        "price": "$10",
+        "category": "Desserts",
+        "preference": "Diary-free",
+        "image": "https://images.unsplash.com/photo-1643733029149-f5b72338c7bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fERlc3NlcnRzfGVufDB8fDB8fHww"
+      },
+      {
+        "name": "Dougnut & Coffee",
+        "price": "$10",
+        "category": "Appetizer",
+        "preference": "Gluten-free",
+        "image": "https://plus.unsplash.com/premium_photo-1670333241428-deef29331fb8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fERlc3NlcnRzfGVufDB8fDB8fHww"
+      },
+      {
+        "name": "Ice Cream",
+        "price": "8",
+        "category": "Appetizer",
+        "preference": "Vegan",
+        "image": "https://images.unsplash.com/photo-1600239448128-917653c5bf77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fERlc3NlcnRzfGVufDB8fDB8fHww"
+      }
+    ]
+  }

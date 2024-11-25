@@ -14,16 +14,18 @@ body{
 .navbar{
     background-color: var(--primary);
     color: var(--nursery);
+    /* position: fixed; */
 }
 .navbar .container{
     display: flex;
     justify-content: space-between;
-    padding-inline: 0.5rem 1rem;
+    padding-inline: 1rem 1rem;
     align-items: center;
     height: 10vh;
 }
 .logo{
-    font-size: 3rem;
+    font-style: italic;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 .logo i{
@@ -46,6 +48,19 @@ body{
     transition: 1s;
     padding: 0.50rem;
 }
+/* LOGOUT BTN */
+.logout {
+    background-color: #EFA00F;
+    color: #0F2C33;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout:hover {
+    background-color: #533946;
+  }
 
 .hero-section{
     background: url(images/hero-image1.avif) no-repeat center/cover;
@@ -57,6 +72,7 @@ body{
     text-align: justify;
 }
 .hero-content h1{
+    font-style: italic;
     font-size: 5rem;
     font-weight: bolder;
     margin-top: 0.5rem;
@@ -95,6 +111,41 @@ body{
     color: var(--secondary);
     transition: 0.5s;
 }
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #E6D1B4;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Transform hamburger to "X" */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+
+
 /* Sampling-Section */
 .sampling-section .container{
     display: grid;
@@ -147,6 +198,7 @@ body{
 .welcome-content h2{
     color: var(--nursery);
     font-size: 3rem;
+    font-style: italic;
     font-weight: bolder;
     margin: 0%;
 }
@@ -156,88 +208,205 @@ body{
 }
 .welcome-content p{
     color: var(--secondary);
+    font-size: 26px;
 }
-/* Our Product Section */
-.product-section .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-content: flex-start; */
-    gap: 2rem;
-}
-.product-section h1{
-    font-size: 2rem;
-    font-weight: bold;
+
+/* MEAL DETAILS */
+#menu h1 {
+    color: #0F2C33;
+    font-size: 36px;
+    margin-top: 5rem;
+    margin-bottom: 20px;
     text-align: center;
-    /* margin-top: 5rem; */
-    border-bottom: 4px solid #E6D1B4;
-    margin: 5rem 30rem 3rem 30rem;
-}
-.product-links{
+  }
+  
+  #searchInput {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-}
-.product-links a{
-    text-decoration: none;
-    background-color: var(--tertiary );
-    color: var(--secondary);
-    padding: 7px;
-    border-radius: 5px;
-}
-.product-links a:hover{
-    background-color: var(--primary);
-    color: var(--nursery);
-    transition: 1s;
-}
-#all{
-    background-color: var(--primary);
-    color: var(--nursery);
-    padding: 7px;
-    border-radius: 5px;
-}
-#all:hover{
-    background-color: var(--tertiary);
-    color: var(--secondary);
-    transition: 1s;
-}
-.product-list{
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5rem;
-}
-.content img{
-    width: 20vw;
-    height: 25vh;
-}
-.content{
+  }
+  #filterButtons {
+    margin-bottom: 20px;
     text-align: center;
-    padding: 1.5rem;
-    /* background-color: var(--primary); */
-    border: 1px solid #0F2C33;
+  }
+  
+  #filterButtons button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #0F2C33;
+    color: #E6D1B4;
     border-radius: 5px;
-}
-.content:hover{
-    border: 2.5px solid #0F2C33;
-    /* transition: 1s; */
-}
-.content h4{
-    color: var(--secondary);
-    font-size: 1rem;
-}
-.content a{
-    text-decoration: none;
-    background-color: var(--primary);
-    color: var(--nursery);
-    padding: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  #filterButtons button:hover {
+    background-color: #533946;
+  }
+  
+  #menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0F2C33;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .card:hover{
+    box-shadow: 0 0 10px #E6D1B4;
+  }
+  
+  .card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .card h3{
+    color: #0F2C33;
+  }
+  .card p{
+    color: #533946;
+  }
+  .card button{
+    background-color: #0F2C33;
+    color: #E6D1B4;
+    padding: 5px;
     border-radius: 5px;
-}
-.content a:hover{
-    background-color: var(--tertiary);
-    color: var(--secondary);
-}
+  }
+  .card button:hover{
+    background-color: #533946;
+  }
+  
+  .meal-details {
+    background-color: #E6D1B4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0F2C33;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin: 0 auto;
+  }
+
+/* MEAL DETAILS PAGE */
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    overflow: hidden;
+  }
+  .main h1{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  /* Container for Details */
+  .details-container {
+    max-width: 900px;
+    width: 90%;
+    background-color: #E6D1B4;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #0F2C33;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Meal Image */
+  .meal-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Meal Info Section */
+  .meal-info {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .meal-info h2 {
+    margin: 10px 0;
+    /* font-size: 32px; */
+    color: #533946;
+  }
+  
+  .meal-info h4 {
+    margin: 5px 0;
+    color: #0F2C33;
+    font-weight: normal;
+  }
+  
+  .meal-info h5 {
+    /* line-height: 1.6; */
+    margin: 5px 0;
+    color: #533946;
+  }
+
+  .meal-info h3{
+    margin: 5px 0;
+    color: #0F2C33;
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #0F2C33;
+    color: #E6D1B4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #533946;
+  }
+
+  /* PAGINATION */
+  #pagination{
+    text-align: center;
+    margin-top: 3rem;
+    gap: 5px;
+  }
+  #pagination button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0F2C33;
+    color: #E6D1B4;
+  }
+  #pagination button:hover {
+    background-color: #533946;
+  }
 
 /* Liner Section */
 .liner{
@@ -350,6 +519,9 @@ body{
     background-color: var(--primary);
     color: var(--secondary);
 }
+.submit:hover{
+    background-color: #533946;
+}
 
 /* Footer-Section */
 .footer{
@@ -403,7 +575,11 @@ body{
     border-radius: 8px;
     box-shadow: 0 0 10px #0F2C33;
     width: 500px;
-    margin: 20px auto;
+    margin: 180px auto;
+  }
+  .auth-container h1{
+    text-align: center;
+    color: var(--primary);
   }
   .auth-container button {
     width: 100%;
@@ -424,11 +600,40 @@ body{
 
 
 /* Media-Query */
+
+/* Mobile & tablet screen */
+@media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #0F2C33;
+      flex-direction: column;
+      gap: 10px;
+      width: 100px;
+      padding: 20px;
+      box-shadow: 0 2px 5px #E6D1B4;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+    }
+  }
+  
+
+
+
 @media(max-width: 480px){
     
-    .navbar .container{
+    /* .navbar .container{
         justify-content: center;
-    }
+    } */
     .logo{
         font-size: 1.2rem;
     }
@@ -461,6 +666,7 @@ body{
     }
     .hero-content h3{
         margin-left: 2.5rem;
+        color: #EFA00F;
     }
     .hero-content a{
         margin-left: 5rem;
@@ -468,12 +674,14 @@ body{
 
     .sampling-section .container{
         grid-template-columns: auto;
+        justify-content: center;
     }
 
     .welcome-section .container{
         flex-direction: column-reverse;
-        padding: 0rem;
+        padding-inline: 2rem;
         justify-content: center;
+        gap: 2rem;
     }
     .welcome-image{
         display: flex;
@@ -489,20 +697,30 @@ body{
     .welcome-content h2{
         font-size: 2rem;
     }
+    .welcome-content p{
+        font-size: 0.5rem;
+    }
 
     .product-section .container{
         flex-direction: column;
-        padding: 0%;
+        padding: 1rem;
     }
     .product-section h1{
         font-size: 1.5rem;
     }
     .product-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 0.5rem;
     }
     .product-links a{
         font-size: 0.7rem;
+    }
+    .search{
+        margin: 0 5rem;
+        display: flex;
+        align-items: center;
     }
     .product-list{
         display: flex;
@@ -544,6 +762,15 @@ body{
     .footer-content{
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    /* Auth container     */
+    input {
+        width: 95%;
+      }
+
+    .auth-container{
+        width: 400px;
     }
 }
 

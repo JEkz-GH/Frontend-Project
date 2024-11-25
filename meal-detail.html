@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodmenuwebpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    MealDelight<i class="fas fa-utensils"></i>
+                </h1>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href=""><i class="fas fa-cart-shopping"></i></a></li>
+                    <li id="authLinks"><a href="" id="loginLink">Log <i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><button class="logout" id="logoutBtn" style="display: none;">Logout</button></li>
+                    <!-- <li><a href="">PRODUCTS</a></li> -->
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+      
+    <main class="main">
+        <h1>MEAL DETAILS</h1>
+        <div class="container">
+            <div class="details-container">
+                <div class="meal-details" id="mealDetails"></div>
+                <button class="back-button" onclick="goBack()">Back to Menu</button>
+            </div>
+        </div>
+    </main>
+    <script src="meal-detail.js"></script>
+    <script>
+        if(!localStorage.getItem('authenticatedUser')){
+            window.location.href = 'login.html'
+        }
+    </script>
+
+    
+</body>
+</html>
