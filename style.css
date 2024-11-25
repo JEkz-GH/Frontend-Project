@@ -171,10 +171,14 @@ body{
     z-index: 1;
 }
 /* Welcome-Section */
+.welcome-section{
+    height: auto;
+}
 .welcome-section .container{
     display: flex;
     justify-content: center;
     padding: 3rem;
+    height: auto;
     background-color: var(--primary);
     border-radius: 5px;
 }
